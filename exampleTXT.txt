@@ -1,0 +1,45 @@
+5			// tamaño alfabeto cinta
+0 1 X Y , 	// Alfabeto cinta
+_			// Caracter en blanco
+16 1 0 		// numero de estados, estado inicial, numero de estados finales 
+			// estados finales
+1 , 10 , D	// Transiciones
+1 1 2 X D	// de la forma 
+1 0 6 X D	// estado actual, simbolo actual, estado siguiente, simbolo a escribir, direccion
+2 0 2 0 D
+2 1 2 1 D
+2 , 3 , D
+3 X 3 X D
+3 Y 3 Y D
+3 1 4 X I
+3 0 4 Y I
+4 X 4 X I
+4 Y 4 Y I
+4 , 5 , I
+5 0 5 0 I
+5 1 5 1 I
+5 X 1 X D
+6 0 6 0 D
+6 1 6 1 D
+6 , 7 , D
+7 X 7 X D
+7 Y 7 Y D
+7 1 8 Y I
+7 0 8 X I
+8 X 8 X I
+8 Y 8 Y I
+8 , 9 , I
+9 0 9 0 I
+9 1 9 1 I
+9 X 1 X D
+10 Y 11 Y D
+10 X 14 X D
+10 _ 15 , D
+11 X 11 X D
+11 Y 11 Y D
+11 _ 12 , D
+12 _ 13 0 D
+14 X 14 X D
+14 Y 11 Y D
+14 _ 15 , D
+15 _ 16 1 D
